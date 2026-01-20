@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.work-sans-font {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Button related styles */
+.btn {
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  background: linear-gradient(90deg, #ff4b2b, #7141ff);
+  color: #fff;
+  text-decoration: none;
+}
+/* navbar related styles */
+
+.logo {
+  font-weight: 700;
+  background: linear-gradient(90deg, #ff5fa2, #6ecbff);
+  background-clip: text;
+  color: transparent;
+}
+
+.navbar {
+  max-width: 1600px;
+  height: 92px;
+  margin: 0 auto;
+  padding: 25px 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1a0b2e;
+}
+.navbar h1 {
+  color: white;
+}
+.nav-links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+/* Hero section related styles */
+
+.banner {
+  max-width: 100%;
+  height: 760px;
+  margin: 0 auto;
+  background-image: url("/assets/hero-bg.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.banner-content {
+  position: relative;
+  width: 280px;
+  height: 280px;
+  margin: 0 auto 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.microphone-img {
+  position: absolute;
+  width: 130px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.badge {
+  position: absolute;
+  top: 20px;
+  right: -15px;
+  background: #00ff9c;
+  color: #000;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.banner h1 {
+  color: #ffffff;
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.banner p {
+  color: rgb(212, 206, 206);
+  font-size: 16px;
+  margin-bottom: 25px;
+}
