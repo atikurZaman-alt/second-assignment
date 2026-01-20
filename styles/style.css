@@ -14,6 +14,8 @@
 
 /* Button related styles */
 .btn {
+  color: white;
+  text-decoration: none;
   padding: 12px 28px;
   font-size: 1rem;
   font-weight: bold;
@@ -21,8 +23,6 @@
   border-radius: 30px;
   cursor: pointer;
   background: linear-gradient(90deg, #ff4b2b, #7141ff);
-  color: #fff;
-  text-decoration: none;
 }
 /* navbar related styles */
 
@@ -34,14 +34,14 @@
 }
 
 .navbar {
+  background-color: #1a0b2e;
   max-width: 100%;
-  height: 92px;
+  height: 76px;
   margin: 0 auto;
   padding: 25px 150px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #1a0b2e;
 }
 .navbar h1 {
   color: white;
@@ -55,22 +55,22 @@
 .nav-links a {
   text-decoration: none;
   font-size: 18px;
-  color: #ffffff;
+  color: white;
 }
 
 .hamburger {
   display: none;
 }
 
-/* Hero section related styles */
+/* banner section related styles */
 
 .banner {
+  background-image: url("../assets/hero-bg.png");
   max-width: 100%;
   height: 760px;
-  margin: 0 auto;
-  background-image: url("../assets/hero-bg.png");
   background-size: cover;
   background-position: center;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -78,19 +78,18 @@
 }
 
 .banner-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   width: 280px;
   height: 280px;
   margin: 0 auto 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .circle-img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
 }
 
 .microphone-img {
@@ -102,25 +101,25 @@
 }
 
 .badge {
-  position: absolute;
-  top: 20px;
-  right: -15px;
   background: #00ff9c;
   color: #000;
-  padding: 6px 16px;
-  border-radius: 20px;
   font-size: 12px;
   font-weight: bold;
+  top: 20px;
+  right: -15px;
+  position: absolute;
+  padding: 6px 16px;
+  border-radius: 20px;
 }
 
 .banner h1 {
-  color: #ffffff;
+  color: white;
   font-size: 48px;
   margin-bottom: 10px;
 }
 
 .banner p {
-  color: rgb(212, 206, 206);
+  color: #cfc9d8;
   font-size: 14px;
   margin-bottom: 25px;
 }
@@ -130,7 +129,7 @@
 .about {
   background-color: #1a0b2e;
   padding: 80px 20px;
-  color: #fff;
+  color: white;
 }
 
 .about-container-first {
@@ -148,22 +147,22 @@
 }
 
 .about-container-first p {
+  color: #cfc9d8;
   font-size: 14px;
   line-height: 1.6;
-  color: #cfc9d8;
 }
 
 .line-break {
   width: 80%;
   height: 1px;
-  background: rgba(255, 255, 255, 0.1);
+  background: white;
+  opacity: 30%;
   margin: 60px auto;
 }
 
 .about-container-secound {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  /* gap: 20px; */
   max-width: 100%;
   margin: 0 auto;
 }
@@ -172,7 +171,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* gap: 5px; */
+  gap: 5px;
 }
 
 .item h1 {
@@ -184,7 +183,6 @@
 .item p {
   font-size: 13px;
   color: #cfc9d8;
-  margin: 0;
 }
 
 /* premium box styles */
@@ -192,7 +190,7 @@
 .techwave {
   width: 100%;
   padding: 100px 0;
-  background: linear-gradient(180deg, #1a082e, #2a0a4a);
+  background: #230e3d;
   color: white;
 }
 
@@ -213,11 +211,11 @@
 }
 
 .card {
-  background: rgba(255, 255, 255, 0.04);
   padding: 35px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: column;
+  background: #3c156fca;
   border-radius: 24px;
 }
 
@@ -279,8 +277,8 @@
 }
 
 .featured-item h3 {
-  margin: 15px 0 8px;
   font-size: 20px;
+  margin: 15px 0 8px;
 }
 
 .featured-item p {
@@ -297,9 +295,9 @@
 /* host section styles */
 
 .host-section {
+  text-align: center;
   background: #1a0b2e;
   padding: 80px 20px;
-  text-align: center;
 }
 
 .host-section h2 {
@@ -309,21 +307,20 @@
 }
 
 .host-card {
+  display: flex;
+  gap: 30px;
+  align-items: center;
   background: #2a124b;
   max-width: 900px;
   margin: auto;
   padding: 40px;
   border-radius: 20px;
-  display: flex;
-  gap: 30px;
-  align-items: center;
 }
 
 .host-img img {
   width: 140px;
   height: 140px;
   border-radius: 50%;
-  object-fit: cover;
 }
 
 .host-content {
@@ -331,7 +328,7 @@
 }
 
 .host-content h3 {
-  color: #fff;
+  color: white;
   font-size: 24px;
   margin-bottom: 10px;
 }
@@ -360,7 +357,6 @@
 .footer-section {
   height: 412px;
   background: url("../assets/footer-bg.png");
-  /* center/cover no-repeat */
   display: flex;
   flex-direction: column;
   justify-content: center;
